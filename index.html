@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>JR Arquitectura y Diseño</title>
-  <style>
+     <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -74,7 +74,7 @@
       top: 60%;
       left: 50%;
       transform: translate(-50%, -50%);
-      font-size: 2em;
+      font-size: 3em;
       font-weight: bold;
       opacity: 1;
       transition: opacity 1s ease-in-out;
@@ -168,19 +168,6 @@
       width: 0;
       transition: width 0.1s ease-out;
     }
-    @media (max-width: 150px) {
-      .overlay-text {
-        font-size: 1.2em;
-        top: 45%;
-      }
-      header img {
-        height: 150px;
-      }
-      .galeria-proyectos-scrollable {
-        flex-direction: column;
-        align-items: center;
-      }
-    }
     .modal {
       display: none;
       position: fixed;
@@ -215,86 +202,90 @@
     }
     #contacto h1, #sobre-nosotros h1,
     #contacto h2, #sobre-nosotros h2 {
-      font-size: 5.2em;
+      font-size: 3em;
       font-weight: bold;
     }
     #contacto p, #sobre-nosotros p {
-      font-size: 2.6em;
+      font-size: 1.4em;
       line-height: 1.6;
     }
     .whatsapp-float {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #25d366;
-  color: white;
-  border-radius: 30px;
-  padding: 10px 15px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  text-decoration: none;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  z-index: 10000;
-  transition: transform 0.2s ease;
-}
-.whatsapp-float:hover {
-  transform: scale(1.05);
-}
-.whatsapp-float img {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-}
-.whatsapp-float span {
-  font-size: 16px;
-  font-weight: bold;
-}
-@media (max-width: 768px) {
-  .whatsapp-float span {
-  }
-}
-@media (max-width: 550px) {
-  header {
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 15px;
-  }
-@media (max-width: 550px) {
-  .hero {
-    margin-top: 120px; /* Antes era 250px */
-  }
-}
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 30px;
+      padding: 10px 15px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      z-index: 10000;
+      transition: transform 0.2s ease;
+    }
+    .whatsapp-float:hover {
+      transform: scale(1.05);
+    }
+    .whatsapp-float img {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+    }
+    .whatsapp-float span {
+      font-size: 16px;
+      font-weight: bold;
+    }
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 15px;
+      }
+      header img {
+        height: 80px;
+        width: auto;
+      }
+      .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+        align-items: center;
+      }
+      .nav-links a {
+        font-size: 18px;
+      }
+      .overlay-text {
+        font-size: 2em;
+        top: 50%;
+      }
+      #contacto h1, #sobre-nosotros h1,
+      #contacto h2, #sobre-nosotros h2 {
+        font-size: 2em;
+      }
+      #contacto p, #sobre-nosotros p {
+        font-size: 1.2em;
+      }
+    }
+    @media (max-width: 480px) {
+      .overlay-text {
+        font-size: 1.5em;
+        top: 45%;
+      }
+      #contacto h1, #sobre-nosotros h1,
+      #contacto h2, #sobre-nosotros h2 {
+        font-size: 1.8em;
+      }
+      #contacto p, #sobre-nosotros p {
+        font-size: 1em;
+      }
+      .whatsapp-float span {
+        display: none;
+      }
+    }
+    </style>
 
-
-  header img {
-    height: 80px; /* Reducido del original */
-    width: auto;
-  }
-
-  .nav-links {
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 10px;
-    align-items: center;
-  }
-
-  .nav-links a {
-    font-size: 18px;
-  }
-}
-
-    @media (max-width: 550px) {
-  #contacto p, #sobre-nosotros p {
-    font-size: 1.4em;
-  }
-     #contacto h1, #sobre-nosotros h1,
-  #contacto h2, #sobre-nosotros h2 {
-    font-size: 1.8em;
-  }   
-}
-
-  </style>
 </head>
 <body>
   <header>
