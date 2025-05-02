@@ -168,19 +168,6 @@
       width: 0;
       transition: width 0.1s ease-out;
     }
-    @media (max-width: 150px) {
-      .overlay-text {
-        font-size: 1.2em;
-        top: 45%;
-      }
-      header img {
-        height: 80px;
-      }
-      .galeria-proyectos-scrollable {
-        flex-direction: column;
-        align-items: center;
-      }
-    }
     .modal {
       display: none;
       position: fixed;
@@ -250,13 +237,14 @@
   font-size: 16px;
   font-weight: bold;
 }
- @media (max-width: 150px) {
+
+    @media (max-width: 768px) {
       .hero {
-        margin-top: 50px;
+        margin-top: 120px;
       }
 
       .overlay-text {
-        font-size: 4.2vw;
+        font-size: 5vw;
         text-align: center;
         padding: 0 10px;
       }
@@ -294,7 +282,7 @@
       }
 
       #contacto h1, #sobre-nosotros h1 {
-        font-size: 1.5em;
+        font-size: 2em;
       }
 
       #contacto p, #sobre-nosotros p {
@@ -302,7 +290,7 @@
       }
     }
 
-    @media (max-width: 200px) {
+    @media (max-width: 480px) {
       .whatsapp-float {
         bottom: 15px;
         right: 15px;
@@ -314,7 +302,7 @@
       }
 
       .overlay-text {
-        font-size: 2vw;
+        font-size: 6vw;
       }
 
       .modal-contenido {
