@@ -247,7 +247,7 @@
   }
 
   header img {
-    height: 30px; /* ← Más pequeño para dar espacio al menú */
+    height: 60px; /* ← Más pequeño para dar espacio al menú */
     width: auto;
   }
 
@@ -263,8 +263,11 @@
   }
 
   .overlay-text {
-    font-size: 2em;
+    font-size: 2vm,;
     top: 50%;
+    padding: 0 15px;
+  text-align: center;
+
   }
 
   #contacto h1, #sobre-nosotros h1,
@@ -277,17 +280,17 @@
   }
 }
 
-    @media (max-width: 480px) {
+    @media (max-width: 550px) {
       .overlay-text {
         font-size: 1.5em;
         top: 45%;
       }
       #contacto h1, #sobre-nosotros h1,
       #contacto h2, #sobre-nosotros h2 {
-        font-size: 1.8em;
+        font-size: 2em;
       }
       #contacto p, #sobre-nosotros p {
-        font-size: 1em;
+        font-size: 1.2em;
       }
       .whatsapp-float span {
         display: none;
