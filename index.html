@@ -168,6 +168,19 @@
       width: 0;
       transition: width 0.1s ease-out;
     }
+    @media (max-width: 150px) {
+      .overlay-text {
+        font-size: 1.2em;
+        top: 45%;
+      }
+      header img {
+        height: 150px;
+      }
+      .galeria-proyectos-scrollable {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
     .modal {
       display: none;
       position: fixed;
@@ -202,11 +215,11 @@
     }
     #contacto h1, #sobre-nosotros h1,
     #contacto h2, #sobre-nosotros h2 {
-      front-size: 5.2em;
-      front-weight: bold;
+      font-size: 5.2em;
+      font-weight: bold;
     }
     #contacto p, #sobre-nosotros p {
-      front-size: 3.6em;
+      font-size: 3.6em;
       line-height: 1.6;
     }
     .whatsapp-float {
@@ -234,105 +247,37 @@
   border-radius: 50%;
 }
 .whatsapp-float span {
-  front-size: 16px;
-  front-weight: bold;
+  font-size: 16px;
+  font-weight: bold;
 }
-@media (max-width: 550px) {
-  .hero {
-    margin-top: 120px; /* Antes era 250px */
+@media (max-width: 768px) {
+  .whatsapp-float span {
+    display: none; /* En móviles solo se ve el ícono */
   }
 }
-
-  @media (max-width: 550px) {
+@media (max-width: 768px) {
   header {
-    display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
-    gap: 10px;
-    flex-wrap: wrap;
+    padding: 20px 10px;
   }
 
   header img {
-    height: 50px;
-    width: auto;
+    height: 100px;
+    margin-bottom: 10px;
   }
-  .galeria-interna-scrollable {
-    margin-top: -1px; /* Ajusta este valor según lo que necesites */
-  }
+
   .nav-links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 4px;
-    width: 100%; /* ← Asegura que no se desborde */
-    margin: 0;
-    padding: 0;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 0;
+    align-items: center;
   }
 
   .nav-links a {
-    front-size: 4px;
-    padding: 6px 10px;
-    white-space: nowrap; /* ← Evita que el texto se parta */
-    flex-shrink: 0;       /* ← Evita que se encojan demasiado */
-  }
-
-  html, body {
-    overflow-x: hidden; /* ← Previene scroll horizontal */
+    font-size: 20px;
   }
 }
-
-
-  .overlay-text {
-    front-size: 2vm,;
-    top: 50%;
-    padding: 0 15px;
-  text-align: center;
-
-  }
-
-  #contacto h1, #sobre-nosotros h1,
-  #contacto h2, #sobre-nosotros h2 {
-    front-size: 2em;
-  }
-
-  #contacto p, #sobre-nosotros p {
-    front-size: 1.2em;
-  }
-}
-
-    @media (max-width: 550px) {
-      .overlay-text {
-        front-size: 1.5em;
-        top: 45%;
-      }
-      #contacto h1, #sobre-nosotros h1,
-      #contacto h2, #sobre-nosotros h2 {
-        font-size: 2em;
-      }
-      #contacto p, #sobre-nosotros p {
-        front-size: 1.2em;
-      }
-      .whatsapp-float span {
-        display: none;
-      }
-      .whatsapp-float {
-  padding: 4px 8px;
-  border-radius: 16px;
-  bottom: 15px;
-  right: 15px;
-}
-
-.whatsapp-float img {
-  width: 9px;
-  height: 9px;
-}
-
-.whatsapp-float span {
-  front-size: 10px;
-}
-
-    }
   </style>
 </head>
 <body>
@@ -405,7 +350,7 @@
       const scrollPosition = window.scrollY;
       const docHeight = document.documentElement.scrollHeight - window.innerHeight;
       const scrollPercentage = (scrollPosition / docHeight) * 100;
-      document.getElementById('scroll-bar').style.width = ${scrollPercentage}%;
+      document.getElementById('scroll-bar').style.width = `${scrollPercentage}%`;
     }
     window.addEventListener('scroll', updateScrollBar);
 
@@ -429,7 +374,7 @@
       textElement.style.opacity = 0;
       background.style.opacity = 0.3;
       setTimeout(() => {
-        background.style.backgroundImage = url('${images[currentIndex]}');
+        background.style.backgroundImage = `url('${images[currentIndex]}')`;
         textElement.innerText = textArray[currentIndex];
         textElement.style.opacity = 1;
         background.style.opacity = 1;
@@ -506,4 +451,4 @@
   <span>Contáctanos</span>
 </a>
 </body>
-</html>
+</html>  
