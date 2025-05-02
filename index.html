@@ -238,73 +238,51 @@
   font-weight: bold;
 }
 
-    @media (max-width: 650px) {
-      .hero {
-        margin-top: 55px;
-      }
-
-      .overlay-text {
-        font-size: 2vw;
-        text-align: center;
-        padding: 0 10px;
-      }
-
+    @media (max-width: 768px) {
       header {
         flex-direction: column;
         align-items: center;
         padding: 10px 15px;
       }
-
       header img {
         height: 80px;
+        width: auto;
       }
-
       .nav-links {
         flex-direction: column;
         gap: 10px;
         margin-top: 10px;
         align-items: center;
       }
-
       .nav-links a {
         font-size: 18px;
       }
-
-      .galeria-proyectos-scrollable {
-        flex-direction: column;
-        max-height: none;
-        overflow-y: visible;
-        gap: 20px;
+      .overlay-text {
+        font-size: 2em;
+        top: 50%;
       }
-
-      .proyecto {
-        width: 90%;
+      #contacto h1, #sobre-nosotros h1,
+      #contacto h2, #sobre-nosotros h2 {
+        font-size: 2em;
+      }
+      #contacto p, #sobre-nosotros p {
+        font-size: 1.2em;
       }
     }
-    @media (max-width: 768px) {
-  #contacto h1, #sobre-nosotros h1,
-  #contacto h2, #sobre-nosotros h2 {
-    font-size: 1.5em;
-  }
-}
     @media (max-width: 480px) {
-      .whatsapp-float {
-        bottom: 25px;
-        right: 15px;
-        padding: 8px 12px;
+      .overlay-text {
+        font-size: 1.5em;
+        top: 45%;
       }
-
+      #contacto h1, #sobre-nosotros h1,
+      #contacto h2, #sobre-nosotros h2 {
+        font-size: 1.8em;
+      }
+      #contacto p, #sobre-nosotros p {
+        font-size: 1em;
+      }
       .whatsapp-float span {
         display: none;
-      }
-
-      .overlay-text {
-        font-size: 1.2vw;
-      }
-
-      .modal-contenido {
-        width: 95%;
-        height: auto;
       }
     }
   </style>
