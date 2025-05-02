@@ -239,27 +239,27 @@
 }
 
     @media (max-width: 550px) {
-  header {
-    flex-direction: row; /* ← CAMBIO: de column a row */
-    justify-content: space-between; /* Distribuye mejor el logo y el menú */
-    align-items: center;
+header {
+    flex-wrap: wrap; /* ← NUEVO: permite que el contenido baje a una nueva línea si no cabe */
+    justify-content: center; /* Opcional: centra los elementos */
     padding: 10px 15px;
   }
 
-  header img {
-    height: 60px; /* ← Más pequeño para dar espacio al menú */
+   header img {
+    height: 30px;
     width: auto;
+    margin-bottom: 10px; /* Separación si se envuelve */
   }
 
-  .nav-links {
-    flex-direction: row; /* ← CAMBIO: ya no en columna */
-    gap: 15px;           /* ← Reduce espacio entre botones */
-    margin: 0;
-    align-items: center;
+.nav-links {
+    flex-wrap: wrap; /* ← NUEVO: permite que los enlaces también se acomoden */
+    gap: 10px;
+    justify-content: center;
+    margin-left: 0; /* ← Elimina margen para que no desborde */
   }
-
-  .nav-links a {
-    font-size: 8px;
+.nav-links a {
+    font-size: 10px; /* ← Un poco más legible que 8px */
+    padding: 4px 8px;
   }
 
   .overlay-text {
