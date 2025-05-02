@@ -239,36 +239,44 @@
 }
 
     @media (max-width: 768px) {
-      header {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px 15px;
-      }
-      header img {
-        height: 80px;
-        width: auto;
-      }
-      .nav-links {
-        flex-direction: column;
-        gap: 10px;
-        margin-top: 10px;
-        align-items: center;
-      }
-      .nav-links a {
-        font-size: 18px;
-      }
-      .overlay-text {
-        font-size: 2em;
-        top: 50%;
-      }
-      #contacto h1, #sobre-nosotros h1,
-      #contacto h2, #sobre-nosotros h2 {
-        font-size: 2em;
-      }
-      #contacto p, #sobre-nosotros p {
-        font-size: 1.2em;
-      }
-    }
+  header {
+    flex-direction: row; /* ← CAMBIO: de column a row */
+    justify-content: space-between; /* Distribuye mejor el logo y el menú */
+    align-items: center;
+    padding: 10px 15px;
+  }
+
+  header img {
+    height: 60px; /* ← Más pequeño para dar espacio al menú */
+    width: auto;
+  }
+
+  .nav-links {
+    flex-direction: row; /* ← CAMBIO: ya no en columna */
+    gap: 15px;           /* ← Reduce espacio entre botones */
+    margin: 0;
+    align-items: center;
+  }
+
+  .nav-links a {
+    font-size: 16px;
+  }
+
+  .overlay-text {
+    font-size: 2em;
+    top: 50%;
+  }
+
+  #contacto h1, #sobre-nosotros h1,
+  #contacto h2, #sobre-nosotros h2 {
+    font-size: 2em;
+  }
+
+  #contacto p, #sobre-nosotros p {
+    font-size: 1.2em;
+  }
+}
+
     @media (max-width: 480px) {
       .overlay-text {
         font-size: 1.5em;
