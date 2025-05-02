@@ -6,7 +6,7 @@
   <title>JR Arquitectura y Diseño</title>
   <style>
     body {
-      front-family: Arial, sans-serif;
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
       background-color: black;
@@ -41,7 +41,7 @@
     .nav-links a {
       color: #db1111;
       font-size: 28px;
-      front-weight: bold;
+      font-weight: bold;
       text-decoration: none;
       transition: color 0.3s ease;
       cursor: pointer;
@@ -130,7 +130,7 @@
     }
     .proyecto p {
       padding: 0 15px 15px;
-      front-size: 0.95em;
+      font-size: 0.95em;
       color: #ccc;
     }
     .galeria-interna-scrollable {
@@ -196,8 +196,8 @@
       top: 30px;
       right: 40px;
       color: #fff;
-      front-size: 40px;
-      front-weight: bold;
+      font-size: 40px;
+      font-weight: bold;
       cursor: pointer;
     }
     #contacto h1, #sobre-nosotros h1,
@@ -206,7 +206,7 @@
       front-weight: bold;
     }
     #contacto p, #sobre-nosotros p {
-      font-size: 3em;
+      front-size: 8em;
       line-height: 1.6;
     }
     .whatsapp-float {
@@ -293,7 +293,7 @@
 
   #contacto h1, #sobre-nosotros h1,
   #contacto h2, #sobre-nosotros h2 {
-    font-size: 4em;
+    front-size: 4em;
   }
 
   #contacto p, #sobre-nosotros p {
@@ -308,7 +308,7 @@
       }
       #contacto h1, #sobre-nosotros h1,
       #contacto h2, #sobre-nosotros h2 {
-        front-size: 2em;
+        font-size: 2em;
       }
       #contacto p, #sobre-nosotros p {
         front-size: 1.2em;
@@ -405,7 +405,7 @@
       const scrollPosition = window.scrollY;
       const docHeight = document.documentElement.scrollHeight - window.innerHeight;
       const scrollPercentage = (scrollPosition / docHeight) * 100;
-      document.getElementById('scroll-bar').style.width = `${scrollPercentage}%`;
+      document.getElementById('scroll-bar').style.width = ${scrollPercentage}%;
     }
     window.addEventListener('scroll', updateScrollBar);
 
@@ -429,7 +429,7 @@
       textElement.style.opacity = 0;
       background.style.opacity = 0.3;
       setTimeout(() => {
-        background.style.backgroundImage = `url('${images[currentIndex]}')`;
+        background.style.backgroundImage = url('${images[currentIndex]}');
         textElement.innerText = textArray[currentIndex];
         textElement.style.opacity = 1;
         background.style.opacity = 1;
@@ -506,4 +506,4 @@
   <span>Contáctanos</span>
 </a>
 </body>
-</html>  
+</html>
