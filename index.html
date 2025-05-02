@@ -254,12 +254,18 @@
   .whatsapp-float span {
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 550px) {
   header {
     flex-direction: column;
     align-items: center;
     padding: 10px 15px;
   }
+@media (max-width: 550px) {
+  .carousel-container {
+    margin-top: 0 !important;    /* o reduce el valor si ya hay */
+    padding-top: 10px;           /* opcional, ajusta según lo necesites */
+  }
+}
 
   header img {
     height: 80px; /* Reducido del original */
@@ -278,7 +284,7 @@
   }
 }
 
-    @media (max-width: 768px) {
+    @media (max-width: 550px) {
   #contacto p, #sobre-nosotros p {
     font-size: 1.4em;
   }
